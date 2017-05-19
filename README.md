@@ -9,3 +9,14 @@
 
 Библиотека для PagerSlidingTabs - 
 https://github.com/astuetz/PagerSlidingTabStrip
+
+
+
+
+
+Тут советы по правке 
+http://stackoverflow.com/questions/26609734/how-to-enable-multidexing-with-the-new-android-multidex-support-library
+
+ 
+APK файл прилагается
+
