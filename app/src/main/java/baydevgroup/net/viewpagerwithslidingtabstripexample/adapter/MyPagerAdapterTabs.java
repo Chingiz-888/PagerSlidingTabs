@@ -4,6 +4,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.astuetz.PagerSlidingTabStrip;
+
 import baydevgroup.net.viewpagerwithslidingtabstripexample.R;
 import baydevgroup.net.viewpagerwithslidingtabstripexample.fragments.FragmentOne;
 import baydevgroup.net.viewpagerwithslidingtabstripexample.fragments.FragmentThree;
@@ -13,7 +15,7 @@ import baydevgroup.net.viewpagerwithslidingtabstripexample.fragments.FragmentTwo
  * Created by cingiz-mac on 19.05.17.
  */
 
-public class MyPagerAdapterTabs extends FragmentPagerAdapter  {
+public class MyPagerAdapterTabs extends FragmentPagerAdapter implements PagerSlidingTabStrip.IconTabProvider  {
 
     protected final String[] titles = {"Бани", "Строительство", "Отделка"};
     protected Fragment[]     fragments;
@@ -46,6 +48,10 @@ public class MyPagerAdapterTabs extends FragmentPagerAdapter  {
     }
 
 
+    @Override
+    public int getPageIconResId(int position) {
+        return icnns[position];
+    }
 }
 
 
